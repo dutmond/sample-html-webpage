@@ -1,8 +1,8 @@
 provider "aws" {
   version    = "~> 2.0"
   region     = "us-east-1"
-  access_key = "xxxxxxx" #ensure to use valid key
-  secret_key = "xxxxxxx" #ensure to use valid key
+  # access_key = "xxxxxxx" #ensure to use valid key
+  # secret_key = "xxxxxxx" #ensure to use valid key
 }
 
 # Providing a reference to our default VPC
