@@ -92,7 +92,7 @@ resource "aws_alb" "application_load_balancer" {
 
 # Output the DNS web address
 output "out" {
-  value     = ${data.aws_alb.application_load_balancer.dns_name}
+  value     = data.aws_alb.application_load_balancer.dns_name
   description = "Here is the DNS web address"
 }
 
