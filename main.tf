@@ -91,7 +91,7 @@ resource "aws_alb" "application_load_balancer" {
 }
 
 # Output the DNS web address
-output "out" {
+output "web_address" {
   value     = aws_alb.application_load_balancer.dns_name
   description = "Here is the DNS web address"
 }
