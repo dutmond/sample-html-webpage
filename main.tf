@@ -90,6 +90,12 @@ resource "aws_alb" "application_load_balancer" {
   security_groups = ["${aws_security_group.load_balancer_security_group.id}"]
 }
 
+# Output the DNS web address
+output "out" {
+  value     = "dns_name"
+  description = "Here is the DNS web address"
+}
+
 # Creating a security group for the load balancer:
 resource "aws_security_group" "load_balancer_security_group" {
   ingress {
